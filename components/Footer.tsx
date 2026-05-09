@@ -7,14 +7,16 @@ export default function Footer() {
         </span>
         <div className="flex items-center gap-4">
           <a
-            href="mailto:amarnathallamrajar@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=amarnathallamrajar@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-mono ts-small text-text-muted hover:text-text-secondary transition-colors duration-150"
           >
             Email
           </a>
           <span className="text-text-muted">·</span>
           <a
-            href="https://www.linkedin.com/in/amarnathallamraju/"
+            href="https://www.linkedin.com/in/amarnathallamraju"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono ts-small text-text-muted hover:text-text-secondary transition-colors duration-150"

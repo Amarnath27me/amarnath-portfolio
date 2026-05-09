@@ -62,13 +62,15 @@ export default function Contact() {
             </p>
             <div className="mt-6 space-y-2">
               <a
-                href="mailto:amarnathallamrajar@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&to=amarnathallamrajar@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block font-mono ts-small text-text-secondary hover:text-accent transition-colors duration-150"
               >
                 amarnathallamrajar@gmail.com
               </a>
               <a
-                href="https://www.linkedin.com/in/amarnathallamraju/"
+                href="https://www.linkedin.com/in/amarnathallamraju"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block font-mono ts-small text-text-secondary hover:text-accent transition-colors duration-150"

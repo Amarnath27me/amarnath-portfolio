@@ -8,8 +8,8 @@ export const projects = [
     description:
       "The LeetCode for SQL & Data Engineering. I built and shipped a full-stack platform where users practice SQL on production-style schemas, debug realistic data issues, and design databases — all with real query execution against SQLite and PostgreSQL backends.",
     stack: "FastAPI, React, PostgreSQL, SQLite, Vercel",
-    liveUrl: "https://sql-it.vercel.app",
-    githubUrl: "https://github.com/Amarnath27me",
+    liveUrl: "https://sqlit.space/",
+    githubUrl: "https://github.com/Amarnath27me/SQLit",
     heroImage: "/images/projects/sqlit-hero.png",
     subImages: [
       {
@@ -40,7 +40,7 @@ export const projects = [
       "An end-to-end ELT pipeline that ingests Netflix movie ratings from S3, transforms them through a Medallion Architecture in Snowflake using dbt, and serves analytics via Power BI and Looker Studio. The point isn't the data — it's the architecture. This is how modern data stacks integrate.",
     stack: "AWS S3, dbt, Snowflake, Power BI",
     liveUrl: null,
-    githubUrl: "https://github.com/Amarnath27me",
+    githubUrl: "https://github.com/Amarnath27me/Netflix-ELT-dbt-Pipeline",
     heroImage: "/images/projects/netflix-elt-architecture.png",
     subImages: null,
     featured: false,
@@ -56,7 +56,7 @@ export const projects = [
       "A SQL Server data warehouse using Medallion Architecture with Bronze → Silver → Gold layers and a dimensional star schema for analytics. Integrates ERP and CRM data for BI, ad-hoc SQL, and ML consumption.",
     stack: "SQL Server, T-SQL, Star Schema",
     liveUrl: null,
-    githubUrl: "https://github.com/Amarnath27me",
+    githubUrl: "https://github.com/Amarnath27me/data-warehouse-project-sql",
     heroImage: "/images/projects/datawarehouse-architecture.png",
     subImages: null,
     featured: false,
