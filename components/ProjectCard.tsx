@@ -65,7 +65,7 @@ function FeaturedProject({ project }: { project: Project }) {
         )}
       </div>
 
-      <div className="mt-8 relative w-full aspect-video max-h-[600px] rounded-xl border border-border overflow-hidden bg-bg-elevated">
+      <div className="mt-8 relative w-full aspect-video max-h-[600px] rounded-xl border border-border overflow-hidden bg-bg-elevated project-img-hover">
         <Image
           src={project.heroImage}
           alt={project.name}
@@ -145,7 +145,7 @@ function StandardProject({ project }: { project: Project }) {
       </div>
 
       <div className={imageLeft ? "md:order-1" : "md:order-2"}>
-        <div className="relative aspect-video rounded-xl border border-border overflow-hidden bg-bg-elevated">
+        <div className="relative aspect-video rounded-xl border border-border overflow-hidden bg-bg-elevated project-img-hover">
           <Image
             src={project.heroImage}
             alt={project.name}

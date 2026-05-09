@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import CurrentThinking from "@/components/CurrentThinking";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
@@ -17,13 +18,14 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
+        <Skills />
         <Projects />
         <Metrics />
-        <Skills />
         <CurrentThinking />
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

@@ -12,11 +12,32 @@ const links = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = links.map((l) => l.href.replace("#", ""));
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActiveSection(id);
+        },
+        { rootMargin: "-40% 0px -40% 0px" }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   return (
@@ -31,15 +52,25 @@ export default function Nav() {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="font-mono ts-small text-text-secondary hover:text-text-primary transition-colors duration-150"
-            >
-              {link.label}
-            </a>
-          ))}
+          {links.map((link) => {
+            const isActive = activeSection === link.href.replace("#", "");
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`font-mono ts-small transition-colors duration-150 relative ${
+                  isActive
+                    ? "text-text-primary"
+                    : "text-text-secondary hover:text-text-primary"
+                }`}
+              >
+                {link.label}
+                {isActive && (
+                  <span className="absolute -bottom-1 left-0 right-0 h-px bg-accent" />
+                )}
+              </a>
+            );
+          })}
         </div>
 
         <button
