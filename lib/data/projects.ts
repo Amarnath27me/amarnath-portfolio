@@ -1,0 +1,65 @@
+export const projects = [
+  {
+    number: "01",
+    slug: "sqlit",
+    title: "Full-Stack SQL Learning Platform",
+    name: "SQLit",
+    meta: "500+ users · 412 problems · 65 debugging investigations",
+    description:
+      "The LeetCode for SQL & Data Engineering. I built and shipped a full-stack platform where users practice SQL on production-style schemas, debug realistic data issues, and design databases — all with real query execution against SQLite and PostgreSQL backends.",
+    stack: "FastAPI, React, PostgreSQL, SQLite, Vercel",
+    liveUrl: "https://sql-it.vercel.app",
+    githubUrl: "https://github.com/Amarnath27me",
+    heroImage: "/images/projects/sqlit-hero.png",
+    subImages: [
+      {
+        src: "/images/projects/sqlit-practice.png",
+        label: "Practice Arena",
+        caption: "412 problems across 3 datasets",
+      },
+      {
+        src: "/images/projects/sqlit-debug.png",
+        label: "Data Debugging",
+        caption: "Real business scenarios",
+      },
+      {
+        src: "/images/projects/sqlit-optimization.png",
+        label: "Query Optimization",
+        caption: "EXPLAIN + before/after",
+      },
+    ],
+    featured: true,
+  },
+  {
+    number: "02",
+    slug: "netflix-pipeline",
+    title: "ELT + dbt + Medallion Architecture",
+    name: "Netflix Data Pipeline",
+    meta: null,
+    description:
+      "An end-to-end ELT pipeline that ingests Netflix movie ratings from S3, transforms them through a Medallion Architecture in Snowflake using dbt, and serves analytics via Power BI and Looker Studio. The point isn't the data — it's the architecture. This is how modern data stacks integrate.",
+    stack: "AWS S3, dbt, Snowflake, Power BI",
+    liveUrl: null,
+    githubUrl: "https://github.com/Amarnath27me",
+    heroImage: "/images/projects/netflix-elt-architecture.png",
+    subImages: null,
+    featured: false,
+    imagePosition: "right" as const,
+  },
+  {
+    number: "03",
+    slug: "data-warehouse",
+    title: "Medallion + Star Schema",
+    name: "SQL Data Warehouse",
+    meta: null,
+    description:
+      "A SQL Server data warehouse using Medallion Architecture with Bronze → Silver → Gold layers and a dimensional star schema for analytics. Integrates ERP and CRM data for BI, ad-hoc SQL, and ML consumption.",
+    stack: "SQL Server, T-SQL, Star Schema",
+    liveUrl: null,
+    githubUrl: "https://github.com/Amarnath27me",
+    heroImage: "/images/projects/datawarehouse-architecture.png",
+    subImages: null,
+    featured: false,
+    imagePosition: "left" as const,
+  },
+];
