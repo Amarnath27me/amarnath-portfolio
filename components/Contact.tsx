@@ -70,7 +70,7 @@ export default function Contact() {
                 amarnathallamrajar@gmail.com
               </a>
               <a
-                href="https://linkedin.com/in/amarnathallamraju"
+                href="https://www.linkedin.com/in/amarnathallamraju/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block font-mono ts-small text-text-secondary hover:text-accent transition-colors duration-150"

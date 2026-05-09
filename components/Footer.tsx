@@ -16,7 +16,7 @@ export default function Footer() {
           </a>
           <span className="text-text-muted">·</span>
           <a
-            href="https://www.linkedin.com/in/amarnathallamraju"
+            href="https://www.linkedin.com/in/amarnathallamraju/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono ts-small text-text-muted hover:text-text-secondary transition-colors duration-150"

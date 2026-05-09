@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TiltCard from "./TiltCard";
 
 type Project = {
   number: string;
@@ -65,7 +66,7 @@ function FeaturedProject({ project }: { project: Project }) {
         )}
       </div>
 
-      <div className="mt-8 relative w-full aspect-video max-h-[600px] rounded-xl border border-border overflow-hidden bg-bg-elevated project-img-hover">
+      <TiltCard className="mt-8 relative w-full aspect-video max-h-[600px] rounded-xl border border-border overflow-hidden bg-bg-elevated">
         <Image
           src={project.heroImage}
           alt={project.name}
@@ -73,7 +74,7 @@ function FeaturedProject({ project }: { project: Project }) {
           className="object-cover"
           sizes="(max-width: 1200px) 100vw, 1200px"
         />
-      </div>
+      </TiltCard>
 
       {project.subImages && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
@@ -145,7 +146,7 @@ function StandardProject({ project }: { project: Project }) {
       </div>
 
       <div className={imageLeft ? "md:order-1" : "md:order-2"}>
-        <div className="relative aspect-video rounded-xl border border-border overflow-hidden bg-bg-elevated project-img-hover">
+        <TiltCard className="relative aspect-video rounded-xl border border-border overflow-hidden bg-bg-elevated">
           <Image
             src={project.heroImage}
             alt={project.name}
@@ -153,7 +154,7 @@ function StandardProject({ project }: { project: Project }) {
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-        </div>
+        </TiltCard>
       </div>
     </div>
   );

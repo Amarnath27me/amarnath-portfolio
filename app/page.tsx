@@ -9,10 +9,14 @@ import CurrentThinking from "@/components/CurrentThinking";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import ScrollProgress from "@/components/ScrollProgress";
+import MouseGlow from "@/components/MouseGlow";
 
 export default function Home() {
   return (
     <>
+      <ScrollProgress />
+      <MouseGlow />
       <Nav />
       <main>
         <Hero />
