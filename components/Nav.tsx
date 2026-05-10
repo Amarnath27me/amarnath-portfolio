@@ -71,6 +71,14 @@ export default function Nav() {
               </a>
             );
           })}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono ts-small text-accent border border-accent rounded-md px-3 py-1.5 hover:bg-accent hover:text-white transition-all duration-150"
+          >
+            Resume ↓
+          </a>
         </div>
 
         <button
@@ -95,6 +103,15 @@ export default function Nav() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="font-mono ts-small text-accent hover:text-accent-hover transition-colors"
+            >
+              Resume ↓
+            </a>
           </div>
         </div>
       )}

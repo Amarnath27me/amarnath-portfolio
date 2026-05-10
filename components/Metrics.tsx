@@ -17,7 +17,7 @@ export default function Metrics() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
         {metrics.map((metric) => (
           <FadeIn key={metric.label}>
-            <div className="bg-bg-elevated border border-border rounded-xl p-8 hover:border-border-strong hover:-translate-y-0.5 transition-all duration-250">
+            <div className="metric-card bg-bg-elevated border border-border rounded-xl p-8 hover:border-border-strong hover:-translate-y-0.5">
               <p className="font-display ts-h1 text-text-primary">
                 <AnimatedCounter value={metric.value} />
               </p>

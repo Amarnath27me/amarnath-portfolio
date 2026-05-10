@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="flex items-center gap-6 hero-animate hero-animate-delay-3">
           <a
             href="#work"
-            className="font-mono ts-small text-text-primary border border-border rounded-md px-5 py-2.5 hover:bg-accent hover:border-accent hover:text-white transition-all duration-250"
+            className="btn-gradient-border font-mono ts-small text-text-primary rounded-md px-5 py-2.5 hover:text-white transition-all duration-250"
           >
             View Work →
           </a>
